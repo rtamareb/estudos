@@ -40,6 +40,21 @@
 #     print (f" A letra é: {letra}")
 
 # print("Acabou o FOR")
+# Se em uma palavra específica, tem a letra Y
+
+# print ("")
+# palavra = input("Por favor, digite uma palavra qualquer: ")
+# letra = input ("Por favor, digite uma letra que você queira saber se ela está contida na palavra digitada anteriormente: ")
+# chave = "Não"
+# for letrap in palavra:
+#     if letrap == letra:
+#         chave = "Sim"
+
+# if chave == "Sim":
+#     print(f"A palavra digitada contem a letra {letra}")
+# else:
+#     print(f"Essa palavra não tem a letra {letra}")
+
 
 # print ("")
 # print ("Exemplo 01 de 'WHILE'")
