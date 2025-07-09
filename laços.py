@@ -43,6 +43,7 @@
 # Se em uma palavra específica, tem a letra Y
 
 # print ("")
+# print ("Exemplo 04 de 'FOR'")
 # palavra = input("Por favor, digite uma palavra qualquer: ")
 # letra = input ("Por favor, digite uma letra que você queira saber se ela está contida na palavra digitada anteriormente: ")
 # chave = "Não"
