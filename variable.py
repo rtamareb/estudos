@@ -20,3 +20,25 @@ altura =float(input("Digite a sua altura: ")) #entrada de texto convertido para 
 
 print (f"Olá, {nome}! Você tem {idade} anos e mede {altura}m.")
 
+
+#Variáveis
+
+print ('A variável nome cujo conteúdo é ',nome,' é do tipo', type(nome))
+
+print ('A variável idade cujo conteúdo é ',idade,' é do tipo', type(idade))
+
+print ('A variável altura cujo conteúdo é ',altura ,' é do tipo', type(altura))
+
+var_booleana = False
+print ('A variável var_booleana cujo conteúdo é ',var_booleana ,' é do tipo', type(var_booleana))
+
+num1 = 100.25
+num2 = 350.50
+
+print ('O resultado de ',num1, '+', num2, 'é:', num1+num2,'. E o tipo é',type(num1 + num2))
+
+
+num1 = 200
+num2 = 450
+
+print ('O resultado de ',num1, '+', num2, 'é:', num1+num2,'. E o tipo é',type(num1 + num2))
