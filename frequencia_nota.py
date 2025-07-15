@@ -9,13 +9,18 @@ print("Cálculo de frequência e nota")
 aluno = input("  Digite o nome do aluno: ")
 materia = input("  Digite a matéria: ")
 aulas_dadas = int(input("  Digite o total de aulas dadas: "))
-freq_aluno = int(input("  Digite a quantidade de aulas frequentadas pelo aluno: "))
+faltas_aluno = int(input("  Digite o total de faltas do aluno: "))
 freq_perc = float(input("  Digite o percentual de frequência mínima: "))
 nota_prova1 = float(input("  Digite a nota da prova 1: "))
 nota_prova2 = float(input("  Digite a nota da prova 2: "))
 nota_corte = float(input("  Digite a nota de corte: "))
 
-# Cálculo da frequência
+# Cálculo da frequência do aluno
+freq_aluno = aulas_dadas - faltas_aluno 
+print (f'{aluno} frequentou em {materia}: {freq_aluno} aulas')
+
+
+# Cálculo da frequência mínima
 freq_min = freq_perc * aulas_dadas / 100
 print ('')
 print (f'A frequencia minima em {materia} é de {freq_min} aulas. {aluno} frequentou {freq_aluno} aulas')
