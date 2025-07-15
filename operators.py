@@ -1,4 +1,5 @@
-# Operadores Matemáticos
+# Operators
+# # Operadores Matemáticos
 
 # Operações básicas: +, -, *, /, %, **
 # %  ==> Resto da divisão. Ex.: 5 % 2 = 1
