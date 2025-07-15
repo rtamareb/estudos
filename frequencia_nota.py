@@ -17,12 +17,10 @@ nota_corte = float(input("  Digite a nota de corte: "))
 
 # Cálculo da frequência do aluno
 freq_aluno = aulas_dadas - faltas_aluno 
-print (f'{aluno} frequentou em {materia}: {freq_aluno} aulas')
-
-
+print (' ')
 # Cálculo da frequência mínima
 freq_min = freq_perc * aulas_dadas / 100
-print ('')
+ 
 print (f'A frequencia minima em {materia} é de {freq_min} aulas. {aluno} frequentou {freq_aluno} aulas')
 if freq_aluno >= freq_min:  
     freq_ok = True
@@ -33,17 +31,36 @@ else:
 media = (nota_prova1 + nota_prova2) / 2
 print ('')
 print (f'A nota de corte de {materia} é {nota_corte}. {aluno} teve a média {media}')
-print ('')
+ 
 
 if media >= nota_corte:
     media_ok = True             
 else:
     media_ok = False
 
-if freq_ok == True:
-    if media_ok == True:
-      print(f'O aluno {aluno} tirou média {media} em {materia}. Aprovado!!!')
+# if freq_ok == True:
+#     if media_ok == True:
+#       print(f'O aluno {aluno} tirou média {media} em {materia}. Aprovado!!!')
+
+#     else:
+#       print(f'O aluno {aluno} tirou média {media} em {materia}. Reprovado devido à média')
+ 
+# else:
+#     print(f'O aluno {aluno} não atingiu a frequência mínima de {freq_min} aulas em {materia}. Reprovado devido à frequência')
+    
+
+if media_ok == True:
+    if freq_ok == True:
+        resultado = 'Aprovado'
     else:
-      print(f'O aluno {aluno} tirou média {media} em {materia}. Reprovado devido à média')
+        resultado = 'Reprovado por frequência'  
 else:
-    print(f'O aluno {aluno} não atingiu a frequência mínima de {freq_min} aulas em {materia}. Reprovado devido à frequência')
+    resultado = 'Reprovado por média'   
+
+
+print("")       
+print("Resumo final")
+print(f'  O/A aluno/a: {aluno} na matéria {materia} obteve média {media}. A nota de corte foi {nota_corte} ')
+print(f'  A frequência foi de {freq_aluno} aulas, com {faltas_aluno} faltas. A frequência mínima era de {freq_min} aulas')
+print(f'  Resultado final: {resultado}')
+
