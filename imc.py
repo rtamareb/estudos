@@ -55,7 +55,7 @@ while valid_peso == False:
                 print ("  ** Peso não pode ser zero")
             elif peso < 30:
                 print ("  ** Peso não pode ser menor que 30 kilos")
-            elif peso > 200:
+            elif peso > 350:
                 print ("  ** Peso não pode ser maior que 350 kilos")
             else:
                 valid_peso = True
