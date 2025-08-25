@@ -56,12 +56,12 @@ while valid_peso == False:
             elif peso < 30:
                 print ("  ** Peso não pode ser menor que 30 kilos")
             elif peso > 200:
-                print ("  ** Peso não pode ser maior que 200 kilos")
+                print ("  ** Peso não pode ser maior que 350 kilos")
             else:
                 valid_peso = True
                 print ("")
         except Exception as e:
-            print ("  ** Peso deve ser um valor em kilos, numérico positivo, maior que zeros ")    
+            print ("  ** Peso deve ser um valor em kilos, numérico positivo, maior que 30 kilos e menor que 350 kilos ")    
             print ("     E se houverem casas decimais, devem ser separadas com '.'")
 
 # Validação da altura
@@ -85,7 +85,7 @@ while valid_altura == False:
                 valid_altura = True
                 print ("")
         except Exception as e:
-            print ("  ** Altura deve ser um valor em metros, numérico positivo, maior que zeros")
+            print ("  ** Altura deve ser um valor em metros, numérico positivo, maior que 1,20 m e menor que 2,50 m")
             print ("     E se houverem casas decimais, devem ser separadas com '.'")
     
 # Cálculo do IMC
