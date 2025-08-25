@@ -26,7 +26,7 @@ while valid_nome == False:
         print ("  ** Nome muito curto")
     else:
         valid_nome = True
-        print ("")
+        print ('\n')    # pula uma linha
 
 # Validação do sexo
 valid_sexo = False        
@@ -38,7 +38,7 @@ while valid_sexo == False:
         print ("  ** Sexo inválido")
     else:
         valid_sexo = True
-        print ("")
+        print ('\n')    # pula uma linha
 
 # Validação do peso
 valid_peso = False  
@@ -59,7 +59,7 @@ while valid_peso == False:
                 print ("  ** Peso não pode ser maior que 350 kilos")
             else:
                 valid_peso = True
-                print ("")
+                print ('\n')    # pula uma linha
         except Exception as e:
             print ("  ** Peso deve ser um valor em kilos, numérico positivo, maior que 30 kilos e menor que 350 kilos ")    
             print ("     E se houverem casas decimais, devem ser separadas com '.'")
@@ -83,7 +83,7 @@ while valid_altura == False:
                 print ("  ** Altura não pode ser maior que 2.50 metros")
             else:
                 valid_altura = True
-                print ("")
+                print ('\n')    # pula uma linha
         except Exception as e:
             print ("  ** Altura deve ser um valor em metros, numérico positivo, maior que 1,20 m e menor que 2,50 m")
             print ("     E se houverem casas decimais, devem ser separadas com '.'")
